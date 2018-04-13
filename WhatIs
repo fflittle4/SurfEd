@@ -1,0 +1,38 @@
+Surfed, an interactive editor for free-form surfaces was published in CAD in 1976. fflittle4 was 1 of 4 authors and programmer.
+Surfaces have been invented.
+Ab-initio, blank screen to designed surfaces.
+SurfEd is implemented on Win32 and linux boxes.  It is integration, implementation, schemes and mathematics.
+Windows/OpenGl vs X11/Mesa
+drag/drop with a 2 button wheel mouse.  keyboard for cheats.  Pause for effect (create or complexify)
+Left button is basic 2d translate in plane of screen
+Right button is basic 2d rotate of front of circumsphere.
+Left add right changes up/down to out/in
+right add left changes rotleft to spinCCwize
+wheel deltas are added onto the log of uniform scale
+the bezel is 0 at center, leftmost =-1, rightmost = +1.
+a 3d cursor projects onto the usual 2d cursor. (the depth defaults to 0 and is updated by a pick)
+Screen bezel in a 3d space is default object.  Actions are reversed to act on the environment of the bezel.
+the default environment is an origin jack,  x,y,z spines red-cyan green-purple blue-yellow 
+the origin can be picked and dragged. It is fixed in rotations/scales. It doesn't rotate.
+'d' is a cheat. it changes the appearance of the cursor (BLACK). A black cursor picks an object to delete it.
+deleting the origin exits SurfEd.
+Pause for effect augments mouse buttons to drive a fsm.
+Pause for effect is driven by the screen refresh from counting the basic display loop. Set up screen refresh drives update.
+CREATE A JACK: Position 3d cursor. Left Button Down for a time without moving replaces 3dcursor with a created jack which the mouse can now move.
+CREATE A SEGMENT: Pick a JACK (which replaces cursor and sets depth), wait without moving till cursor replaces jack which includes a rubber band SEGMENT and JACK
+DELETE A JACK: pick it with a black cursor. Also deletes any SEGMENT it is in.
+DELETE A SEGMENT: pick it with black but miss its endJacks.
+Segment pick makes triangle, two new segments to 1 new jack,  wait makes a Bezier parabola instead.
+a parabola spontaneously raises degree to bezier cubic.
+bezier polygon vertices are draggable but don't fuze.  They are vectors and move with thier base jack.
+a Normal is created by waiting on an edge create.
+a Normal effects all bp vertices whose base is the normal's base jack
+wait on a normal enables an effect toggle. It is possible to break/make a normals effect on a bp vertex.
+a bezier polygon's middle segment is it pick. Picking 3 segments that join in order creates a triangle
+a triangle has 3 barbs which look like bp vertices but hang on the middle of the cubic curve
+barbs can be placed.
+picking a curve middle equates (the direction) of two barbs
+waiting on a barb causes it to cycle through its defaults
+where two triangles share an edge and the bp vertices are coplanar and the barb directions are equated, the surface is smooth.
+4-cycles work
+file I/O (.obj) to one filename works as a cheat.
