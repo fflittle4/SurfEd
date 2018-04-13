@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="g0" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/g0" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="X11" />
+		</Linker>
+		<Unit filename="EyeBezel.cpp" />
+		<Unit filename="EyeBezel.h" />
+		<Unit filename="HitParse.cpp" />
+		<Unit filename="bezel.cpp" />
+		<Unit filename="bezel.h" />
+		<Unit filename="dlgio.cpp" />
+		<Unit filename="double3.cpp" />
+		<Unit filename="double3.h" />
+		<Unit filename="double8.cpp" />
+		<Unit filename="double8.h" />
+		<Unit filename="drawall.cpp" />
+		<Unit filename="edge.h" />
+		<Unit filename="f4.cpp" />
+		<Unit filename="fnormal.cpp" />
+		<Unit filename="fnormal.h" />
+		<Unit filename="fpJack.h" />
+		<Unit filename="fp_bezier.h" />
+		<Unit filename="fp_f4.h" />
+		<Unit filename="fp_halfB.h" />
+		<Unit filename="fp_trif.h" />
+		<Unit filename="fsm.h" />
+		<Unit filename="fsmDESTROY.cpp" />
+		<Unit filename="fsmLBD.cpp" />
+		<Unit filename="fsmLBUP.cpp" />
+		<Unit filename="fsmMMove.cpp" />
+		<Unit filename="fsmTIC.cpp" />
+		<Unit filename="fullscreen.cpp" />
+		<Unit filename="gluProjection.cpp" />
+		<Unit filename="handleAnEvent.cpp" />
+		<Unit filename="hedge.h" />
+		<Unit filename="hitall.cpp" />
+		<Unit filename="hittest.cpp" />
+		<Unit filename="lclass,cpt" />
+		<Unit filename="linklist.txt" />
+		<Unit filename="list.h" />
+		<Unit filename="loadPerspectiveHit.cpp" />
+		<Unit filename="loada.cpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="mouseProc.h" />
+		<Unit filename="onCommand.cpp" />
+		<Unit filename="onPaint.cpp" />
+		<Unit filename="polynomial.h" />
+		<Unit filename="polyreadtypes.h" />
+		<Unit filename="polytope.h" />
+		<Unit filename="qf_rot.cpp" />
+		<Unit filename="quadrangle.h" />
+		<Unit filename="rmouse.cpp" />
+		<Unit filename="rsq.cpp" />
+		<Unit filename="rsq.h" />
+		<Unit filename="sed.h" />
+		<Unit filename="startX.cpp" />
+		<Unit filename="surf.h" />
+		<Unit filename="trif.cpp" />
+		<Unit filename="trif.h" />
+		<Unit filename="vlist.cpp" />
+		<Unit filename="vlist.h" />
+		<Unit filename="xpaintit.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
