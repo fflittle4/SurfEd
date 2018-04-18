@@ -36,3 +36,12 @@ waiting on a barb causes it to cycle through its defaults
 where two triangles share an edge and the bp vertices are coplanar and the barb directions are equated, the surface is smooth.
 4-cycles work
 file I/O (.obj) to one filename works as a cheat.
+
+History:  |41 years ago this was a fortran program on a PS2.
+Last year it was a win32 program.
+The CodeBlocks OpenGL example is hacked onto it.
+  More than the hack:  Bezel paradygm perspective. Refresh tick added to X interaction. Create/Destroy .3D Bezier cubic editor.
+    CrossEye stereo. Half Over/Under stereo by 's' toggle.
+      Head tracking via OpenCV Hack and cheap webcam.
+      OpenGL hit machine setup and use.
+  Worth the effort: Quad and triangular (smooth) surfaces.
